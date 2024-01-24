@@ -1,29 +1,112 @@
+import { Code, CodeSlash, Skill } from "react-bootstrap-icons";
+import ml from "../assets/Machine.jpg";
+
 const Skills = () => {
-     const styles = {
-        paddingTop:'5%',
-        height:'100vh',
-        width :'100%',
-     }
-    return ( 
-        <>
-        <section id="skills" style={styles}>
+  const styles = {
+    paddingTop: "5%",
+    height: "100vh",
+    width: "100%",
+  };
 
-            <h1>This is Skills</h1>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum." Section
-          1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-          "S because those who do not know how to
-          pursue pleasure rationally encounter consequences that are extremely
-          painful. Nor again is there anyone who loves or pursues or desires to
+  const imgStyles = {
+    width: "4%",
+    height: "4%",
+  };
+  return (
+    <>
+      <section id="skills" style={styles}>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col">
+              <h1 className="text-center">
+                <CodeSlash />
+              </h1>
+              <h2 className="text-center">Skills and Technologies</h2>
+              <h5 className="text-center mt-3">
+                Elevating Ideas, Crafting Experiences: Explore My Diverse
+                Portfolio of Creative Ventures
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div className="container-fluid mt-4">
+          <div className="row">
+            <div className="col-12 col-md-6 col-lg-6 mt-sm-3">
+              <div className="card">
+                <div className="card-header">Languages</div>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+                      style={imgStyles}
+                    />
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                      style={imgStyles}
+                    />
+                    <span className="ps-3">C/C++</span>
+                  </li>
+                  <li className="list-group-item">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                      style={imgStyles}
+                    />
+                    <span className="ps-3">JavaScript</span>
+                  </li>
+                  <li className="list-group-item">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                      style={imgStyles}
+                    />
+                    <span className="ps-3">Python</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 col-lg-6 mt-sm-3">
+              <div className="card">
+                <div className="card-header">Technologies</div>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                      style={imgStyles}
+                    />
+                    <span className="ps-3">ReactJS</span>
+                  </li>
+                  <li className="list-group-item">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                      style={imgStyles}
+                    />
+                    <span className="ps-3">Bootstrap 5</span>
+                  </li>
+                  <li className="list-group-item">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
+                      style={imgStyles}
+                    />
 
-        </section>
-        </>
-     );
-}
- 
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+                      style={imgStyles}
+                    />
+
+                    <span className="ps-3">PowerBI, Tableau</span>
+                  </li>
+
+                  <li className="list-group-item">
+                    <img src={ml} style={imgStyles}/>
+                    <span className="ps-3">Machine learning</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
 export default Skills;
