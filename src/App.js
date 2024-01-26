@@ -1,9 +1,9 @@
 import logo from "./logo.svg";
-import About from "./components/About";
+import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
-import Resume from "./components/Resume";
+import About from "./components/About";
 import Skills from "./components/Skills";
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Resume />
+      <About />
       <Skills />
       <Project />
       <Contact />

@@ -1,10 +1,10 @@
 import { useRef } from "react";
 import { Routes, Route } from "react-router-dom";
 import Skills from "./Skills";
-import Resume from "./Resume";
+import About from "./About";
 import Project from "./Project";
 import Contact from "./Contact";
-import About from "./About";
+import Home from "./Home";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import Hamburger from "hamburger-react";
 import { useState, useEffect } from "react";
@@ -99,22 +99,22 @@ const Navbar = () => {
         {!isMobile && (
           <>
             <a
-              href="#about"
+              href="#home"
               smooth={true}
               duration={500}
               className="nav-item me-3 ms-5"
               style={styles}
             >
-              About
+              Home
             </a>
             <a
-              href="#resume"
+              href="#about"
               smooth={true}
               duration={300}
               style={styles}
               className="nav-item mx-3"
             >
-              Resume
+              About
             </a>
             <a
               href="#skills"
@@ -161,22 +161,22 @@ const Navbar = () => {
           >
             <li style={mobileMenuItemStyles}>
               <a
+                href="#home"
+                smooth={true}
+                duration={500}
+                style={styles}
+              >
+                Home
+              </a>
+            </li>
+            <li style={mobileMenuItemStyles}>
+              <a
                 href="#about"
                 smooth={true}
                 duration={500}
                 style={styles}
               >
                 About
-              </a>
-            </li>
-            <li style={mobileMenuItemStyles}>
-              <a
-                href="#resume"
-                smooth={true}
-                duration={500}
-                style={styles}
-              >
-                Resume
               </a>
             </li>
             <li style={mobileMenuItemStyles}>
@@ -214,8 +214,8 @@ const Navbar = () => {
       )}
 
       <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="/Resume" element={<Resume />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
         <Route path="/Skills" element={<Skills />} />
         <Route path="/Project" element={<Project />} />
         <Route path="/Contact" element={<Contact />} />
