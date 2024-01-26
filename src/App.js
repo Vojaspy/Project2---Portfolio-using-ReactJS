@@ -6,6 +6,7 @@ import Project from "./components/Project";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import "bootstrap/dist/css/bootstrap.css";
+import 'react-bootstrap-icons';
 
 
 

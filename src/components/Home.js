@@ -1,6 +1,6 @@
 import ReactTyped from "react-typed";
-import ronaldo from "./ronaldo.png";
-import Router from "react-router-dom";
+import ronaldo from "./testimage.webp";
+import { Github, Envelope, Instagram, Linkedin } from "react-bootstrap-icons";
 
 const Home = () => {
   const textStyles = {
@@ -15,17 +15,20 @@ const Home = () => {
   };
 
   const styles = {
-    paddingTop : '5%',
-    height:'100vh',
-    width:'100%',
-  }
+    paddingTop: "5%",
+    height: "100vh",
+    width: "100%",
+  };
 
   return (
     <>
       <section id="home" style={styles}>
-        <div className="container-fluid">
-          <div className="row d-flex" style={typeStyles}>
-            <div className="col-6 col-md-6 col-lg-4 offset-lg-2">
+        <div className="container-fluid" style={{marginTop:'7%'}}>
+          <div className="row d-flex align-items-center" style={typeStyles}>
+            <div className="col-12 col-md-6 col-lg-5 offset-lg-1 mt-5 ">
+              <img src={ronaldo} alt="cr7" className="sm-mt-5" style={{width:'500px'}}/>
+            </div>
+            <div className="col-12 col-md-6 col-lg-5 offset-lg-1 mt-5">
               <h1 className="mt-2">Vojas Gonnade</h1>
               <h3>
                 I am a {""}
@@ -38,9 +41,50 @@ const Home = () => {
                   showCursor={true}
                 />
               </h3>
-            </div>
-            <div className="col-6 col-md-6 col-lg-6">
-              <img src={ronaldo} alt="cr7" className="mt-3 sm-mt-5" />
+              <div>
+                <ul className="d-flex">
+                  <li style={{ listStyleType: "none", width: "40px" }}>
+                    <a
+                      href="https://github.com/Vojaspy"
+                      className="link-dark"
+                      style={{ fontSize: "25px" }}
+                      target="_blank"
+                    >
+                      <Github />
+                    </a>
+                  </li>
+                  <li style={{ listStyleType: "none", width: "40px" }}>
+                    <a
+                      href="mailto:vojasgonnade07@gmail.com"
+                      className="link-dark"
+                      style={{ fontSize: "25px" }}
+                      target="_blank"
+                    >
+                      <Envelope />
+                    </a>
+                  </li>
+                  <li style={{ listStyleType: "none", width: "40px" }}>
+                    <a
+                      href="https://www.linkedin.com/in/vojas-gonnade-57523522a/"
+                      className="link-dark"
+                      style={{ fontSize: "25px" }}
+                      target="_blank"
+                    >
+                      <Linkedin />
+                    </a>
+                  </li>
+                  <li style={{ listStyleType: "none", width: "40px" }}>
+                    <a
+                      href="https://www.instagram.com/vojas.gonnade"
+                      className="link-dark"
+                      style={{ fontSize: "25px" }}
+                      target="_blank"
+                    >
+                      <Instagram />
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
