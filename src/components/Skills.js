@@ -4,8 +4,7 @@ import ml from "../assets/Machine.jpg";
 const Skills = () => {
   const styles = {
     paddingTop: "5%",
-    height: "100vh",
-    width: "100%",
+  
   };
 
   const imgStyles = {
@@ -60,6 +59,21 @@ const Skills = () => {
                     />
                     <span className="ps-3">Python</span>
                   </li>
+                  <li className="list-group-item">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                      style={imgStyles}
+                    />
+                    <span className="ps-3">HTML</span>
+                  </li>
+                  <li className="list-group-item">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                      style={imgStyles}
+                    />
+
+                    <span className="ps-3">CSS</span>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -96,7 +110,7 @@ const Skills = () => {
                   </li>
 
                   <li className="list-group-item">
-                    <img src={ml} style={imgStyles}/>
+                    <img src={ml} style={imgStyles} />
                     <span className="ps-3">Machine learning</span>
                   </li>
                 </ul>

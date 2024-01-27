@@ -3,8 +3,6 @@ import { PersonAdd } from "react-bootstrap-icons";
 const Contact = () => {
   const styles = {
     paddingTop: "5%",
-    height: "100vh",
-    width: "100%",
   };
   return (
     <>

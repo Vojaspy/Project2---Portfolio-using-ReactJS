@@ -1,21 +1,15 @@
-import React, { useState } from "react";
-import { Card } from "react-bootstrap"; // Assuming you have React Bootstrap installed
 
-import weatherAppLogo from "../assets/Weatherapp-logo.png";
-import { Laptop } from "react-bootstrap-icons";
 
 const Project = () => {
   const styles = {
     paddingTop: "5%",
-    height: "100vh",
-    width: "100%",
   };
 
   const cardStyle = {
     textDecoration: "none",
   };
 
-  const [isHovered, setIsHovered] = useState(false);
+
 
   return (
     <>
