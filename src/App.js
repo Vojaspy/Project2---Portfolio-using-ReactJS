@@ -1,5 +1,3 @@
-import logo from "./logo.svg";
-import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";

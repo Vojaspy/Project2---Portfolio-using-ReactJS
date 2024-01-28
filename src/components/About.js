@@ -1,4 +1,4 @@
-import {Braces} from  'react-bootstrap-icons'
+import {Braces,BoxArrowUpRight,Link45deg} from  'react-bootstrap-icons'
 const About = () => {
   const styles = {
     paddingTop: "5%",
@@ -52,14 +52,14 @@ const About = () => {
               <h1>My coding profiles</h1>
             </div>
           </div>
-          <div className="row">
+          <div className="row d-flex justify-content-evenly">
             <div className="col-4 col-md-4 col-lg-3 border rounded-3">
               <a
                 href="https://www.hackerrank.com/profile/vojasgonnade07"
                 target="_blank"
                 style={{ textDecoration: "none",color:'black' }}
               >
-                <h2 className="ps-2 pt-2">Hackerrank</h2>
+                <h2 className="ps-2 pt-2">Hackerrank <Link45deg/></h2>
                 <h5 className="ps-2 pb-2">5★ C++ | 2★ Python</h5>
               </a>
             </div>
@@ -69,7 +69,7 @@ const About = () => {
                 target="_blank"
                 style={{ textDecoration: "none",color:'black' }}
               >
-                <h2 className="ps-2 pt-2">codechef</h2>
+                <h2 className="ps-2 pt-2">codechef <Link45deg/></h2>
                 <h5 className="ps-2 pb-2">Current Highest Rating: 1185</h5>
               </a>
             </div>
@@ -79,7 +79,7 @@ const About = () => {
                 target="_blank"
                 style={{ textDecoration: "none",color:'black' }}
               >
-                <h2 className="ps-2 pt-2">Leetcode</h2>
+                <h2 className="ps-2 pt-2">Leetcode <Link45deg/></h2>
                 <h5 className="ps-2 pb-2"></h5>
               </a>
             </div>
