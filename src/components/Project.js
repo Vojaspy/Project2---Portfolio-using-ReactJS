@@ -26,9 +26,9 @@ const Project = () => {
           </div>
         </div>
         <div className="container-fluid mt-4">
-          <div className="row d-flex justify-content-evenly">
-            <div className="col-12 col-md-3 col-lg-3">
-              <div className="card " style={{ width: "20rem" }}>
+          <div className="row ">
+            <div className="col-9 col-md-5 col-lg-3 offset-sm-3 offset-lg-1 offset-md-0">
+              <div className="card" style={{ width: "20rem" }}>
                 <img src={weatherLogo} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">Weather Web APP</h5>
@@ -49,7 +49,7 @@ const Project = () => {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-3 col-lg-3">
+            <div className="col-9 col-md-5 col-lg-3 offset-sm-3 offset-lg-1 offset-md-1 mt-sm-2 mt-lg-0">
               <div className="card " style={{ width: "20rem" }}>
                 <img src={weatherLogo} className="card-img-top" alt="..." />
                 <div className="card-body">
@@ -71,7 +71,7 @@ const Project = () => {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-3 col-lg-3">
+            <div className="col-9 col-md-5 col-lg-3 offset-sm-3 offset-lg-1 offset-md-0 mt-sm-2 mt-lg-0">
               <div className="card " style={{ width: "20rem" }}>
                 <img src={Sitegenie} className="card-img-top" alt="..." />
                 <div className="card-body">

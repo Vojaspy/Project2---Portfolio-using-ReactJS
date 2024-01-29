@@ -6,7 +6,6 @@ const Home = () => {
   const textStyles = {
     textDecoration: "underline",
     textDecorationColor: "#33ccff",
-    fontFamily: "Noto Sans",
   };
 
   const typeStyles = {
@@ -18,17 +17,18 @@ const Home = () => {
     paddingTop: "5%",
     height: "100vh",
     width: "100%",
+    fontFamily: "Source Code Pro",
   };
 
   return (
     <>
       <section id="home" style={styles}>
-        <div className="container-fluid" style={{marginTop:'7%'}}>
-          <div className="row d-flex align-items-center" style={typeStyles}>
-            <div className="col-12 col-md-6 col-lg-5 offset-lg-1 mt-5 ">
-              <img src={ronaldo} alt="cr7" className="sm-mt-5" style={{width:'500px'}}/>
+        <div className="container-fluid" style={{ marginTop: '7%' }}>
+          <div className="row d-flex align-items-center justify-content-center text-lg-center" style={typeStyles}>
+            <div className="col-12 col-md-7 col-lg-5  mt-5 text-center">
+              <img src={ronaldo} alt="cr7" className="sm-mt-5 img-fluid" />
             </div>
-            <div className="col-12 col-md-6 col-lg-5 offset-lg-1 mt-5">
+            <div className="col-12 col-md-5 col-lg-5 mt-5 text-center">
               <h1 className="mt-2">Vojas Gonnade</h1>
               <h3>
                 I am a {""}
@@ -42,7 +42,7 @@ const Home = () => {
                 />
               </h3>
               <div>
-                <ul className="d-flex">
+                <ul className="d-flex justify-content-center">
                   <li style={{ listStyleType: "none", width: "40px" }}>
                     <a
                       href="https://github.com/Vojaspy"

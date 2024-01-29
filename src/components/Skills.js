@@ -1,4 +1,4 @@
-import { Code, CodeSlash, Skill } from "react-bootstrap-icons";
+import { Code, CodeSlash, Skill ,Database} from "react-bootstrap-icons";
 import ml from "../assets/Machine.jpg";
 
 const Skills = () => {
@@ -52,6 +52,7 @@ const Skills = () => {
                     />
                     <span className="ps-3">JavaScript</span>
                   </li>
+                  
                   <li className="list-group-item">
                     <img
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
