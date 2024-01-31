@@ -3,6 +3,9 @@ import { PersonAdd } from "react-bootstrap-icons";
 const Contact = () => {
   const styles = {
     paddingTop: "5%",
+    backgroundColor: "#EAE0DA",
+    // backgroundColor:'#D8B5FF '
+    // backgroundColor:'#c4b4f3'
   };
   return (
     <>
@@ -13,8 +16,13 @@ const Contact = () => {
               <h1 className="text-center">
                 <PersonAdd />
               </h1>
-              <h1 className="text-center">Get in touch</h1>
-              <h5 className="text-center">Say Hello</h5>
+              <h1
+                className="text-center"
+                style={{ textDecoration: "underline" }}
+              >
+                Get in touch
+              </h1>
+              <h5 className="text-center fst-italic">Say Hello</h5>
             </div>
           </div>
         </div>
@@ -22,10 +30,10 @@ const Contact = () => {
           <div className="row">
             <div className="col-12 col-md-11 col-lg-4 offset-md-1 offset-lg-0">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.702091886795!2d79.11348967503424!3d21.124439980548868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c75612c8e099%3A0xb2e05a8e626b50f9!2sNIT%20complex%2C%20Ayurvedic%20Layout%2C%20Raghuji%20Nagar%2C%20Nagpur%2C%20Maharashtra%20440024!5e0!3m2!1sen!2sin!4v1706266970810!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119065.02905823676!2d78.99010825797474!3d21.161065901994068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1706713731386!5m2!1sen!2sin"
                 width="800"
                 height="600"
-                style={{border:'0'}}
+                style={{border:"0"}}
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
@@ -82,8 +90,9 @@ const Contact = () => {
           </div>
         </div>
         <footer className="mt-3 pb-1">
-          <p className="text-center">&copy; 2021-2025 Vojas Gonnade | All rights reserved</p>
-         
+          <p className="text-center">
+            &copy; 2021-2025 Vojas Gonnade | All rights reserved
+          </p>
         </footer>
       </section>
     </>

@@ -1,6 +1,7 @@
 import ReactTyped from "react-typed";
 import ronaldo from "./testimage.webp";
 import { Github, Envelope, Instagram, Linkedin } from "react-bootstrap-icons";
+// import styles from '../components/newStyles.css';
 
 const Home = () => {
   const textStyles = {
@@ -11,13 +12,16 @@ const Home = () => {
   const typeStyles = {
     justifyContent: "center",
     alignItems: "center",
+    // fontFamily:'Noto Sans',
   };
 
   const styles = {
     paddingTop: "5%",
     height: "100vh",
     width: "100%",
-    fontFamily: "Source Code Pro",
+    // backgroundColor:'#8EA7E9'
+    // backgroundColor:'#48b0af'
+    backgroundColor:'#78b1ca'
   };
 
   return (
@@ -29,7 +33,7 @@ const Home = () => {
               <img src={ronaldo} alt="cr7" className="sm-mt-5 img-fluid" />
             </div>
             <div className="col-12 col-md-5 col-lg-5 mt-5 text-center">
-              <h1 className="mt-2">Vojas Gonnade</h1>
+              <h1 className="mt-2 fst-italic">Vojas Gonnade</h1>
               <h3>
                 I am a {""}
                 <ReactTyped
@@ -39,6 +43,7 @@ const Home = () => {
                   backSpeed={50}
                   loop
                   showCursor={true}
+                  className="fw-bolder"
                 />
               </h3>
               <div>

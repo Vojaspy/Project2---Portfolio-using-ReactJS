@@ -4,6 +4,8 @@ import ml from "../assets/Machine.jpg";
 const Skills = () => {
   const styles = {
     paddingTop: "5%",
+    // backgroundColor:'#A7ECEE'
+    backgroundColor:'#90b2d7'
   
   };
 
@@ -17,11 +19,11 @@ const Skills = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="col">
-              <h1 className="text-center">
+              <h1 className="text-center ">
                 <CodeSlash />
               </h1>
-              <h2 className="text-center">Skills and Technologies</h2>
-              <h5 className="text-center mt-3">
+              <h2 className="text-center" style={{textDecoration:'underline'}}>Skills and Technologies</h2>
+              <h5 className="text-center mt-3 fst-italic">
                 Elevating Ideas, Crafting Experiences: Explore My Diverse
                 Portfolio of Creative Ventures
               </h5>
@@ -30,9 +32,9 @@ const Skills = () => {
         </div>
         <div className="container-fluid mt-4">
           <div className="row">
-            <div className="col-12 col-md-6 col-lg-6 mt-sm-3">
+            <div className="col-12 col-md-6 col-lg-6 mt-sm-3 mb-5">
               <div className="card">
-                <div className="card-header">Languages</div>
+                <div className="card-header fw-bold">Languages</div>
                 <ul className="list-group list-group-flush">
                   <li className="list-group-item">
                     <img
@@ -78,9 +80,9 @@ const Skills = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-6 mt-sm-3">
-              <div className="card">
-                <div className="card-header">Technologies</div>
+            <div className="col-12 col-md-6 col-lg-6 mt-sm-3 mb-5">
+              <div className="card ">
+                <div className="card-header fw-bold">Technologies</div>
                 <ul className="list-group list-group-flush">
                   <li className="list-group-item">
                     <img
