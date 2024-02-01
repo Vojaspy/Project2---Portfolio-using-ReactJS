@@ -1,7 +1,8 @@
 import ReactTyped from "react-typed";
 import ronaldo from "./testimage.webp";
-import { Github, Envelope, Instagram, Linkedin } from "react-bootstrap-icons";
+import { Github, Envelope, Instagram, Linkedin,Link45deg } from "react-bootstrap-icons";
 // import styles from '../components/newStyles.css';
+import resume from '../assets/VojasGonnade.pdf';
 
 const Home = () => {
   const textStyles = {
@@ -90,6 +91,9 @@ const Home = () => {
                   </li>
                 </ul>
               </div>
+              <a href={resume} download="VojasGonnadeRESUME" target="_blank">
+                <button style={{backgroundColor:'#2b5a6e',color:'white'}}>Resume <Link45deg/></button>
+              </a>
             </div>
           </div>
         </div>

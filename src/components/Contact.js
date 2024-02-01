@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { PersonAdd } from "react-bootstrap-icons";
 
 const Contact = () => {
@@ -7,6 +8,35 @@ const Contact = () => {
     // backgroundColor:'#D8B5FF '
     // backgroundColor:'#c4b4f3'
   };
+
+  const [email,setEmail] = useState();
+  const [name, setName] = useState();
+  const [message,setMessage] = useState();
+
+  function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", name, email, message }),
+    })
+    .then(() => {  
+        setEmail(' ');
+        setName(' ');
+        setMessage(' ');
+      alert("Message sent!");
+      })
+      .catch((error) => alert(error));
+  }
+
   return (
     <>
       <section id="contact" style={styles}>
@@ -43,16 +73,20 @@ const Contact = () => {
               <div>
                 <h1>Any message here</h1>
               </div>
-              <form>
+              <form 
+              netlify
+              name="contact">
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">
                     Email address
                   </label>
                   <input
                     type="email"
+                    name="email"
                     class="form-control"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
                 <div class="mb-3">
@@ -61,8 +95,10 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
+                    name="name"
                     class="form-control"
                     id="exampleInputName"
+                    onChange={(e) => setName(e.target.value)}
                   />
                 </div>
                 <div>
@@ -71,9 +107,11 @@ const Contact = () => {
                   </label>
                   <textarea
                     placeholder="message here"
+                    name="message"
                     className="form-control"
                     style={{ width: "480px", height: "200px" }}
                     id="exampleInputMessage"
+                    onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                 </div>
                 <div>
@@ -81,6 +119,7 @@ const Contact = () => {
                     type="submit"
                     className="btn btn-success mt-2 mb-5"
                     style={{ width: "480px" }}
+                    onClick={handleSubmit}
                   >
                     Submit
                   </button>
@@ -94,6 +133,7 @@ const Contact = () => {
             &copy; 2021-2025 Vojas Gonnade | All rights reserved
           </p>
         </footer>
+        
       </section>
     </>
   );

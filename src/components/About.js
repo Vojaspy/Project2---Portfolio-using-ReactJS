@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <>
-      <section id="about" style={styles}>
+      <section id="about" style={styles} className='pb-5'>
         <div className="container-fluid">
           <div className="row">
             <div className="col">
